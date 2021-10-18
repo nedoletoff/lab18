@@ -44,9 +44,5 @@ bool LruCashe::find_and_add(const std::string& value)
 	return res;
 }
 
-friend	ostream& LruCashe::operator<<(ostream& os, const LruCashe& value)
-{
-	os << value.cache;
-	return os;
-}
+
 
