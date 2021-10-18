@@ -21,6 +21,10 @@ class LruCashe
 		void add(const std::string&);	
 		bool find_and_add(const std::string&);
 
-		friend	ostream& operator<<(ostream&, const LruCashe&);
+		friend	ostream& operator<<(ostream& os, const LruCashe& value)
+		{
+		    os << value.cache;
+		    return os;
+		}
 };
 
