@@ -14,10 +14,10 @@ class LruCashe
 	private:
 		void replace(const std::string&);
 		void add(const std::string&);
+		bool find(const std::string&);
 	public:
 		LruCashe(size_t);
 		size_t size();
-		bool find(const std::string&);
 		bool find_and_add(const std::string&);
 
 	friend std::ostream& operator<<(std::ostream& os, const LruCashe& value)
